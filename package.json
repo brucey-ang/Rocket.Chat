@@ -15,7 +15,9 @@
 		"lint": "turbo run lint",
 		"storybook": "yarn workspace @rocket.chat/meteor run storybook",
 		"fuselage": "./fuselage.sh",
-		"fossify": "TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' ts-node scripts/fossify.ts"
+		"fossify": "TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' ts-node scripts/fossify.ts",
+		"deploy:2gb": "bash scripts/rocket-chat-2gb-deploy.sh",
+		"deploy:complete": "bash scripts/complete-rocketchat-deploy.sh"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.11",
